@@ -8,6 +8,16 @@
   margin-top: 50px;
 }
 
+.nameDisplay {
+  width: 400px;
+  border: 2px solid #082B33;
+  border-radius: 25px;
+  background: #FFF;
+  margin-left: 25%;
+  margin-bottom: 300px;
+  margin-top: 50px;
+}
+
 .intro-lorax {
   height: 150px;
 }
