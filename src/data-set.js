@@ -49,256 +49,256 @@ const Data = [
     "answers": ["anywhere in any style sheet", "anywhere in SCSS style sheets", "anywhere in SASS style sheets"],
     "correctAnswer": "anywhere in SCSS style sheets"
   },
-  {
-    "id": "9",
-    "Question": "What is an advantage of using variables in SCSS?",
-    "answers": ["allows for more creativity", "makes confusing properties easier to read", "saves from typing out especially long, specific styles"],
-    "correctAnswer": "saves from typing out especially long, specific styles"
-  },
-  {
-    "id": "10",
-    "Question": "Does regular CSS accept variables?",
-    "answers": ["yes", "no", "only in special circumstances"],
-    "correctAnswer": "Yes"
-  },
-  {
-    "id": "11",
-    "Question": "What is nesting in SCSS?",
-    "answers": ["practice of combining multiple variables into one", 
-      "represents the relationships between HTML elements in CSS", 
-      "a group of CSS declarations to be reused throughout the site"],
-    "correctAnswer": "represents the relationships between HTML elements in CSS"
-  },
-  {
-    "id": "12",
-    "Question": "Why is too much nesting a problem?",
-    "answers": ["creates overly specific CSS",
-    "makes the Sass file too difficult to read",
-    "takes too long to compile"],
-    "correctAnswer": "creates overly specific CSS"
-  },
-  {
-    "id": "13",
-    "Question": "What is the correct syntax for nesting in SCSS?", //needs images
-    "answers": ["<image>", "<image2>", "<image3>"],
-    "correctAnswer": "<image>"
-  },
-  {
-    "id": "14",
-    "Question": "Sass is a superset language — what does that mean?",
-    "answers": ["everything that works in CSS will still work in Sass or SCSS", 
-    "it combines CSS and Javascript", 
-    "Sass uses variables to create supersets"],
-    "correctAnswer": "everything that works in CSS will still work in Sass or SCSS"
-  },
-  {
-    "id": "15",
-    "Question": "<image> This code would output to:", //nesting example
-    "answers": ["<image>", "<image2>", "<image3>"],
-    "correctAnswer": "<image>"
-  },
-  {
-    "id": "16",
-    "Question": "<image> This code provides an example of:", //nesting example
-    "answers": ["nesting", "extend", "mixins"],
-    "correctAnswer": "nesting"
-  },
-  {
-    "id": "17",
-    "Question": "What is the advantage of the @import directive?",
-    "answers": ["", 
-    "", 
-    "compiles stylesheets so only one HTTP request is made to the server"],
-    "correctAnswer": "compiles stylesheets so only one HTTP request is made to the server"
-  },
-  {
-    "id": "18",
-    "Question": "Where does the @import directive get used and why?",
-    "answers": ["only once at the top of the index.scss file", 
-      "in every .scss file to import all styles", 
-      "in index.scss for each individual SCSS files"],
-    "correctAnswer": "in index.scss for each individual SCSS files"
-  },
-  {
-    "id": "19",
-    "Question": "How should Sass files be named?",
-    "answers": ["doctorSass.scss", "_doctorSass.scss", "doctorSass.css"],
-    "correctAnswer": "doctorSass.scss"
-  },
-  {
-    "id": "20",
-    "Question": "What is a partial Sass file?",
-    "answers": ["snippets of CSS to be included in other CSS files", 
-      "Sass file without anything imported into it", 
-      "Sass file with poor/incomplete syntax"],
-    "correctAnswer": "snippets of CSS to be included in other CSS files"
-  },
-  {
-    "id": "21",
-    "Question": "What is a potential use case of a partial Sass file?",
-    "answers": ["a file with all the defined Sass variables", 
-      "file with all the imported partial Sass files", 
-      "placeholder for styles that may not end up being used"],
-    "correctAnswer": "a file with all the defined Sass variables"
-  },
-  {
-    "id": "22",
-    "Question": "How should a partial Sass file be named?",
-    "answers": ["doctorSass.scss", "doctorSass.css", "_doctorSass.scss"],
-    "correctAnswer": "_doctorSass.scss"
-  },
-  {
-    "id": "23",
-    "Question": "What is a Sass mixin?",
-    "answers": ["a mix of the two given colors based on the weight percentage provided", 
-      "a group of CSS declarations to be reused throughout the site", 
-      "a delicious option at ColdStone creamery"],
-    "correctAnswer": "a group of CSS declarations to be reused throughout the site"
-  },
-  {
-    "id": "24",
-    "Question": "What is the proper way to define a Sass mixin?",
-    "answers": ["@mixin mixinName(arguments) { style }", "@mixinName(arguments) { style }", "@mixin mixinName{ style }"],
-    "correctAnswer": "@mixin mixinName(arguments) { style }"
-  },
-  {
-    "id": "25",
-    "Question": "What is especially sassy feature of mixins?",
-    "answers": ["they accept arguments which can be used to pass values", 
-      "inherits properties from other selectors", 
-      "they can be used in javascript"],
-    "correctAnswer": "they accept arguments which can be used to pass values"
-  },
-  {
-    "id": "26",
-    "Question": "How is a Sass mixin called once it has been defined?",
-    "answers": ["@include mixinName(potentialArguments)", "@mixinName()", "@mixinName(potentialArguments)"],
-    "correctAnswer": "@include mixinName(potentialArguments)"
-  },
-  {
-    "id": "27",
-    "Question": "What does the @extend directive do in Sass?",
-    "answers": ["inherits properties from other selectors", 
-      "extends partial Sass files", 
-      "imports Sass color functions"],
-    "correctAnswer": "inherits properties from other selectors"
-  },
-  {
-    "id": "28",
-    "Question": "What is the proper syntax for using @extend?", //needs images
-    "answers": ["<image>", "<image2>", "<image3>"],
-    "correctAnswer": "<image>"
-  },
-  {
-    "id": "29",
-    "Question": "What are color functions?",
-    "answers": ["functions provided by Sass to allow color manipulation", 
-      "a tool for selecting color schemes for an entire project", 
-      "a wider variety of color selectors provided in Sass"],
-    "correctAnswer": "functions provided by Sass to allow color manipulation"
-  },
-  {
-    "id": "30",
-    "Question": "What does color() accept as an argument?",
-    "answers": ["a single color", 
-      "two colors and the weight percentage", 
-      "two colors"],
-    "correctAnswer": "a single color"
-  },
-  {
-    "id": "31",
-    "Question": "What does color() return?",
-    "answers": ["the 180-degree complement of the color passed through as an argument", 
-      "the hex value of that color", 
-      "a mix of the two given colors based on the weight percentage provided"],
-    "correctAnswer": "the 180-degree complement of the color passed through as an argument"
-  },
-  {
-    "id": "32",
-    "Question": "What does mix() accept as an argument?",
-    "answers": ["two colors and a percentage", "two colors", "two colors and a number"],
-    "correctAnswer": "two colors and the weight percentage"
-  },
-  {
-    "id": "33",
-    "Question": "What does mix() return?",
-    "answers": ["the 180-degree complement of the color passed through as an argument", 
-      "a mix of the two given colors based on the weight percentage provided", 
-      ""],
-    "correctAnswer": "a mix of the two given colors based on the weight percentage provided"
-  },
-  {
-    "id": "34",
-    "Question": "Using mix(purple, gold, 100%), which color will be represented?",
-    "answers": ["100% purple", "100% gold", "a 100% mix"],
-    "correctAnswer": "100% purple"
-  },
-  {
-    "id": "35",
-    "Question": "What arguments does lighten() accept?",
-    "answers": ["one color and a number", "one color and a percentage", "two colors and a percentage"],
-    "correctAnswer": "one color and a percentage"
-  },
-  {
-    "id": "36",
-    "Question": "What does darken(color, amount) return?",
-    "answers": ["the given color darkened by the percentage given", 
-      "the given color desaturated by the percentage given", 
-      "the given color darkened by the pixels given"],
-    "correctAnswer": "the given color darkened by the percentage given"
-  },
-  {
-    "id": "37",
-    "Question": "What does desaturate(color, amount) return?",
-    "answers": ["the given color desaturated by the percentage given", 
-      "the given color darkened by the percentage given", 
-      "the given color desaturated"],
-    "correctAnswer": "the given color desaturated by the percentage given"
-  },
-  {
-    "id": "38",
-    "Question": "What arguments does saturate() accept?",
-    "answers": ["two colors and a number", "one color and a percentage", "one color and a number"],
-    "correctAnswer": "one color and a percentage"
-  },
-  {
-    "id": "39",
-    "Question": "How is the & symbol used in Sass?",
-    "answers": ["& is converted to the name of the parent element when nesting", 
-      "& is used to link variables together", 
-      "& is not used in Sass and will throw an error"],
-    "correctAnswer": "& is converted to the name of the parent element when nesting"
-  },
-  {
-    "id": "40",
-    "Question": "Can arithmetic operators be used in Sass?",
-    "answers": ["Yes", "No", "Yes, but why would you?"],
-    "correctAnswer": "Yes, but why would you?"
-  },
-  {
-    "id": "41",
-    "Question": "What does the @if directive do?",
-    "answers": ["@if is not a Sass directive", 
-      "sets style based on a condition", 
-      "repeats CSS definitions multiple times in a row"],
-    "correctAnswer": "sets style based on a condition"
-  },
-  {
-    "id": "42",
-    "Question": "What does the @for directive do",
-    "answers": ["repeats CSS definitions multiple times in a row", 
-      "sets style based on a condition", 
-      "@for is not a Sass directive"],
-    "correctAnswer": "repeats CSS definitions multiple times in a row"
-  },
-  {
-    "id": "43",
-    "Question": "How is the * symbol used in Sass?",
-    "answers": ["* is converted to the name of the parent element when nesting",
-      "* is used to link variables together",
-      "* is not used in Sass and will throw an error"],
-    "correctAnswer": "* is not used in Sass and will throw an error"
-  },
+  // {
+  //   "id": "9",
+  //   "Question": "What is an advantage of using variables in SCSS?",
+  //   "answers": ["allows for more creativity", "makes confusing properties easier to read", "saves from typing out especially long, specific styles"],
+  //   "correctAnswer": "saves from typing out especially long, specific styles"
+  // },
+  // {
+  //   "id": "10",
+  //   "Question": "Does regular CSS accept variables?",
+  //   "answers": ["yes", "no", "only in special circumstances"],
+  //   "correctAnswer": "Yes"
+  // },
+  // {
+  //   "id": "11",
+  //   "Question": "What is nesting in SCSS?",
+  //   "answers": ["practice of combining multiple variables into one", 
+  //     "represents the relationships between HTML elements in CSS", 
+  //     "a group of CSS declarations to be reused throughout the site"],
+  //   "correctAnswer": "represents the relationships between HTML elements in CSS"
+  // },
+  // {
+  //   "id": "12",
+  //   "Question": "Why is too much nesting a problem?",
+  //   "answers": ["creates overly specific CSS",
+  //   "makes the Sass file too difficult to read",
+  //   "takes too long to compile"],
+  //   "correctAnswer": "creates overly specific CSS"
+  // },
+  // {
+  //   "id": "13",
+  //   "Question": "What is the correct syntax for nesting in SCSS?", //needs images
+  //   "answers": ["<image>", "<image2>", "<image3>"],
+  //   "correctAnswer": "<image>"
+  // },
+  // {
+  //   "id": "14",
+  //   "Question": "Sass is a superset language — what does that mean?",
+  //   "answers": ["everything that works in CSS will still work in Sass or SCSS", 
+  //   "it combines CSS and Javascript", 
+  //   "Sass uses variables to create supersets"],
+  //   "correctAnswer": "everything that works in CSS will still work in Sass or SCSS"
+  // },
+  // {
+  //   "id": "15",
+  //   "Question": "<image> This code would output to:", //nesting example
+  //   "answers": ["<image>", "<image2>", "<image3>"],
+  //   "correctAnswer": "<image>"
+  // },
+  // {
+  //   "id": "16",
+  //   "Question": "<image> This code provides an example of:", //nesting example
+  //   "answers": ["nesting", "extend", "mixins"],
+  //   "correctAnswer": "nesting"
+  // },
+  // {
+  //   "id": "17",
+  //   "Question": "What is the advantage of the @import directive?",
+  //   "answers": ["", 
+  //   "", 
+  //   "compiles stylesheets so only one HTTP request is made to the server"],
+  //   "correctAnswer": "compiles stylesheets so only one HTTP request is made to the server"
+  // },
+  // {
+  //   "id": "18",
+  //   "Question": "Where does the @import directive get used and why?",
+  //   "answers": ["only once at the top of the index.scss file", 
+  //     "in every .scss file to import all styles", 
+  //     "in index.scss for each individual SCSS files"],
+  //   "correctAnswer": "in index.scss for each individual SCSS files"
+  // },
+  // {
+  //   "id": "19",
+  //   "Question": "How should Sass files be named?",
+  //   "answers": ["doctorSass.scss", "_doctorSass.scss", "doctorSass.css"],
+  //   "correctAnswer": "doctorSass.scss"
+  // },
+  // {
+  //   "id": "20",
+  //   "Question": "What is a partial Sass file?",
+  //   "answers": ["snippets of CSS to be included in other CSS files", 
+  //     "Sass file without anything imported into it", 
+  //     "Sass file with poor/incomplete syntax"],
+  //   "correctAnswer": "snippets of CSS to be included in other CSS files"
+  // },
+  // {
+  //   "id": "21",
+  //   "Question": "What is a potential use case of a partial Sass file?",
+  //   "answers": ["a file with all the defined Sass variables", 
+  //     "file with all the imported partial Sass files", 
+  //     "placeholder for styles that may not end up being used"],
+  //   "correctAnswer": "a file with all the defined Sass variables"
+  // },
+  // {
+  //   "id": "22",
+  //   "Question": "How should a partial Sass file be named?",
+  //   "answers": ["doctorSass.scss", "doctorSass.css", "_doctorSass.scss"],
+  //   "correctAnswer": "_doctorSass.scss"
+  // },
+  // {
+  //   "id": "23",
+  //   "Question": "What is a Sass mixin?",
+  //   "answers": ["a mix of the two given colors based on the weight percentage provided", 
+  //     "a group of CSS declarations to be reused throughout the site", 
+  //     "a delicious option at ColdStone creamery"],
+  //   "correctAnswer": "a group of CSS declarations to be reused throughout the site"
+  // },
+  // {
+  //   "id": "24",
+  //   "Question": "What is the proper way to define a Sass mixin?",
+  //   "answers": ["@mixin mixinName(arguments) { style }", "@mixinName(arguments) { style }", "@mixin mixinName{ style }"],
+  //   "correctAnswer": "@mixin mixinName(arguments) { style }"
+  // },
+  // {
+  //   "id": "25",
+  //   "Question": "What is especially sassy feature of mixins?",
+  //   "answers": ["they accept arguments which can be used to pass values", 
+  //     "inherits properties from other selectors", 
+  //     "they can be used in javascript"],
+  //   "correctAnswer": "they accept arguments which can be used to pass values"
+  // },
+  // {
+  //   "id": "26",
+  //   "Question": "How is a Sass mixin called once it has been defined?",
+  //   "answers": ["@include mixinName(potentialArguments)", "@mixinName()", "@mixinName(potentialArguments)"],
+  //   "correctAnswer": "@include mixinName(potentialArguments)"
+  // },
+  // {
+  //   "id": "27",
+  //   "Question": "What does the @extend directive do in Sass?",
+  //   "answers": ["inherits properties from other selectors", 
+  //     "extends partial Sass files", 
+  //     "imports Sass color functions"],
+  //   "correctAnswer": "inherits properties from other selectors"
+  // },
+  // {
+  //   "id": "28",
+  //   "Question": "What is the proper syntax for using @extend?", //needs images
+  //   "answers": ["<image>", "<image2>", "<image3>"],
+  //   "correctAnswer": "<image>"
+  // },
+  // {
+  //   "id": "29",
+  //   "Question": "What are color functions?",
+  //   "answers": ["functions provided by Sass to allow color manipulation", 
+  //     "a tool for selecting color schemes for an entire project", 
+  //     "a wider variety of color selectors provided in Sass"],
+  //   "correctAnswer": "functions provided by Sass to allow color manipulation"
+  // },
+  // {
+  //   "id": "30",
+  //   "Question": "What does color() accept as an argument?",
+  //   "answers": ["a single color", 
+  //     "two colors and the weight percentage", 
+  //     "two colors"],
+  //   "correctAnswer": "a single color"
+  // },
+  // {
+  //   "id": "31",
+  //   "Question": "What does color() return?",
+  //   "answers": ["the 180-degree complement of the color passed through as an argument", 
+  //     "the hex value of that color", 
+  //     "a mix of the two given colors based on the weight percentage provided"],
+  //   "correctAnswer": "the 180-degree complement of the color passed through as an argument"
+  // },
+  // {
+  //   "id": "32",
+  //   "Question": "What does mix() accept as an argument?",
+  //   "answers": ["two colors and a percentage", "two colors", "two colors and a number"],
+  //   "correctAnswer": "two colors and the weight percentage"
+  // },
+  // {
+  //   "id": "33",
+  //   "Question": "What does mix() return?",
+  //   "answers": ["the 180-degree complement of the color passed through as an argument", 
+  //     "a mix of the two given colors based on the weight percentage provided", 
+  //     ""],
+  //   "correctAnswer": "a mix of the two given colors based on the weight percentage provided"
+  // },
+  // {
+  //   "id": "34",
+  //   "Question": "Using mix(purple, gold, 100%), which color will be represented?",
+  //   "answers": ["100% purple", "100% gold", "a 100% mix"],
+  //   "correctAnswer": "100% purple"
+  // },
+  // {
+  //   "id": "35",
+  //   "Question": "What arguments does lighten() accept?",
+  //   "answers": ["one color and a number", "one color and a percentage", "two colors and a percentage"],
+  //   "correctAnswer": "one color and a percentage"
+  // },
+  // {
+  //   "id": "36",
+  //   "Question": "What does darken(color, amount) return?",
+  //   "answers": ["the given color darkened by the percentage given", 
+  //     "the given color desaturated by the percentage given", 
+  //     "the given color darkened by the pixels given"],
+  //   "correctAnswer": "the given color darkened by the percentage given"
+  // },
+  // {
+  //   "id": "37",
+  //   "Question": "What does desaturate(color, amount) return?",
+  //   "answers": ["the given color desaturated by the percentage given", 
+  //     "the given color darkened by the percentage given", 
+  //     "the given color desaturated"],
+  //   "correctAnswer": "the given color desaturated by the percentage given"
+  // },
+  // {
+  //   "id": "38",
+  //   "Question": "What arguments does saturate() accept?",
+  //   "answers": ["two colors and a number", "one color and a percentage", "one color and a number"],
+  //   "correctAnswer": "one color and a percentage"
+  // },
+  // {
+  //   "id": "39",
+  //   "Question": "How is the & symbol used in Sass?",
+  //   "answers": ["& is converted to the name of the parent element when nesting", 
+  //     "& is used to link variables together", 
+  //     "& is not used in Sass and will throw an error"],
+  //   "correctAnswer": "& is converted to the name of the parent element when nesting"
+  // },
+  // {
+  //   "id": "40",
+  //   "Question": "Can arithmetic operators be used in Sass?",
+  //   "answers": ["Yes", "No", "Yes, but why would you?"],
+  //   "correctAnswer": "Yes, but why would you?"
+  // },
+  // {
+  //   "id": "41",
+  //   "Question": "What does the @if directive do?",
+  //   "answers": ["@if is not a Sass directive", 
+  //     "sets style based on a condition", 
+  //     "repeats CSS definitions multiple times in a row"],
+  //   "correctAnswer": "sets style based on a condition"
+  // },
+  // {
+  //   "id": "42",
+  //   "Question": "What does the @for directive do",
+  //   "answers": ["repeats CSS definitions multiple times in a row", 
+  //     "sets style based on a condition", 
+  //     "@for is not a Sass directive"],
+  //   "correctAnswer": "repeats CSS definitions multiple times in a row"
+  // },
+  // {
+  //   "id": "43",
+  //   "Question": "How is the * symbol used in Sass?",
+  //   "answers": ["* is converted to the name of the parent element when nesting",
+  //     "* is used to link variables together",
+  //     "* is not used in Sass and will throw an error"],
+  //   "correctAnswer": "* is not used in Sass and will throw an error"
+  // },
   {
     "id": "44",
     "Question": "What does the @onceler directive do",

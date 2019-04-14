@@ -7,3 +7,18 @@
   margin-bottom: 300px;
   margin-top: 50px;
 }
+
+ul {
+  list-style: none;
+}
+
+.answerButtons {
+  display: flex;
+  flex-direction: column
+}
+
+button {
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}

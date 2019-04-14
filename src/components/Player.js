@@ -9,11 +9,14 @@ class Player extends Component {
   }
 
   render() {
+    console.log(this.props.playerScore)
     let introText
     if (this.props.nameSubmitted) {
       introText = 
         <article className="nameDisplay">
           <p>Welcome { this.props.name }</p>
+          <p>Score: { this.props.playerScore }</p>
+          <p>{ this.props.answerStatus }</p>
         </article>
     } else {
       introText = 
