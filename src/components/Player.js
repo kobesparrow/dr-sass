@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import '../scss/Player.css';
 import lorax from '../images/lorax-book.jpg'
 
@@ -9,7 +8,6 @@ class Player extends Component {
   }
 
   render() {
-    console.log(this.props.playerScore)
     let introText
     if (this.props.nameSubmitted) {
       introText = 

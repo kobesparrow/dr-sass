@@ -8,40 +8,36 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      questions: Data,
+      originalData: Data,
+      questions: [],
       currentPrompt: {},
       wrongAnswers: [],
-      // correctAnswers: [],
       name: "",
       nameSubmitted: false,
       answerStatus: "",
       playerScore: 0,
       gameOver: false
     }
-
-    this.setName = this.setName.bind(this);
-    this.submitName = this.submitName.bind(this);
-    this.storeWrongAnswer = this.storeWrongAnswer.bind(this);
-    this.populatePrompt = this.populatePrompt.bind(this);
-    this.scoreDecrease = this.scoreDecrease.bind(this);
-    this.scoreIncrease = this.scoreIncrease.bind(this);
   }
 
-  setName(e) {
+  setName = (e) => {
     let name = e.target.value;
     this.setState({
-      name: name
+      name: name,
+      questions: this.state.originalData
+    }, () => {
+        localStorage.setItem('originalData', JSON.stringify(this.state.originalData))
     });
   }
 
-  submitName() {
+  submitName = () => {
     this.setState({
       nameSubmitted: true
-    });
+    }); 
     this.populatePrompt();
   }
 
-  populatePrompt() {
+  populatePrompt = () => {
     if (this.state.questions.length === 1) {
       this.setState({
         gameOver: true
@@ -58,17 +54,19 @@ class App extends Component {
     return questions.sort(() => 0.5 - Math.random());
   }
 
-  storeWrongAnswer(wrongPrompt) {
+  storeWrongAnswer = (wrongPrompt) => {
     this.scoreDecrease();
     let wrongAnswers = this.state.wrongAnswers;
     wrongAnswers.push(wrongPrompt)
     this.setState({
       wrongAnswers: wrongAnswers,
       answerStatus: 'YOU IDIOT'
-    })
+    }, () => {
+      localStorage.setItem('wrongAnswers', JSON.stringify(this.state.wrongAnswers))
+    });
   }
 
-  scoreIncrease() {
+  scoreIncrease = () => {
     let playerScore = this.state.playerScore;
     playerScore++;
     this.setState({
@@ -77,7 +75,7 @@ class App extends Component {
     })
   }
 
-  scoreDecrease() {
+  scoreDecrease = () => {
     let playerScore = this.state.playerScore;
     playerScore--;
     this.setState({
@@ -85,13 +83,37 @@ class App extends Component {
     })
   }
 
+  resetWithMissedPrompts = () => {
+    let missedAnswers = JSON.parse(localStorage.wrongAnswers)
+    this.setState({
+      gameOver: false,
+      questions: missedAnswers,
+      answerStatus: "",
+      wrongAnswers: []
+    })
+    localStorage.setItem('wrongAnswers', "")
+  }
+
+  startNewGame = () => {
+    let originalData = JSON.parse(localStorage.originalData)
+    this.setState({
+      nameSubmitted: false,
+      gameOver: false,
+      originalData: originalData,
+      playerScore: 0,
+      answerStatus: ""
+    });
+  }
+
   render() {
     let gameArea
-    if (this.state.gameOver === true) {
-      gameArea = 
+    let endGame
+    if (this.state.wrongAnswers.length === 0) {
+      endGame =
         <div>
           <div className="gameArea">
-            <p>It is over now, please go home</p>
+            <p>You got everything correct!</p>
+            <button onClick={() => this.startNewGame()}>Start a new game</button>
           </div>
           < Player
             submitName={this.submitName}
@@ -102,6 +124,26 @@ class App extends Component {
             playerScore={this.state.playerScore}
           />
         </div>
+    } else {
+      endGame =
+        <div>
+          <div className="gameArea">
+            <p>You've reached the end of the game, what would you like to do?</p>
+            <button onClick={this.resetWithMissedPrompts}>Try again with the questions you got wrong</button>
+            <button onClick={() => this.startNewGame()}>Start a new game</button>
+          </div>
+          < Player
+            submitName={this.submitName}
+            setName={this.setName}
+            nameSubmitted={this.state.nameSubmitted}
+            name={this.state.name}
+            answerStatus={this.state.answerStatus}
+            playerScore={this.state.playerScore}
+          />
+        </div>
+    }
+    if (this.state.gameOver === true) {
+      gameArea = <div> { endGame } </div>
     } else if (this.state.nameSubmitted) {
       gameArea =
       <div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import '../scss/GameArea.css';
 
 class GameArea extends Component {
@@ -14,9 +13,7 @@ class GameArea extends Component {
     if (answer === this.props.prompt.correctAnswer) {
       this.props.scoreIncrease()
       this.props.populatePrompt(); 
-      console.log('correct!');
     } else {
-      console.log('wrong!');
       this.props.storeWrongAnswer(this.props.prompt);
       this.props.populatePrompt();
     }
