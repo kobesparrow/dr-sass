@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import '../scss/GameArea.css';
+import '../scss/GameArea.scss';
 
 class GameArea extends Component {
   constructor(props) {
     super(props);
 
-    this.checkAnswer = this.checkAnswer.bind(this);
+    // this.checkAnswer = this.checkAnswer.bind(this);
   }
 
-  checkAnswer(e) {
+  checkAnswer = (e) => {
     let answer = e.target.innerText;
     if (answer === this.props.prompt.correctAnswer) {
       this.props.scoreIncrease()

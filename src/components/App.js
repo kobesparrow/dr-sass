@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Data from '../data-set.js';
 import Player from './Player.js'
 import GameArea from './GameArea.js'
-import '../scss/App.css';
+import '../scss/App.scss';
 
 class App extends Component {
   constructor() {
