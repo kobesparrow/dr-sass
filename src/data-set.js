@@ -305,7 +305,7 @@ const Data = [
     "answers": ["repeats CSS definitions multiple times in a row",
       "sets style based on a condition",
       "@onceler is not a Sass directive"],
-    "correctAnswer": "repeats CSS definitions multiple times in a row"
+    "correctAnswer": "@onceler is not a Sass directive"
   }
 ]
 

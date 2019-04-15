@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
-import App from './App.js';
-import '../scss/GameArea.css';
+import '../scss/GameArea.scss';
 
 class GameArea extends Component {
   constructor(props) {
     super(props);
 
-    this.checkAnswer = this.checkAnswer.bind(this);
+    // this.checkAnswer = this.checkAnswer.bind(this);
   }
 
-  checkAnswer(e) {
+  checkAnswer = (e) => {
     let answer = e.target.innerText;
     if (answer === this.props.prompt.correctAnswer) {
       this.props.scoreIncrease()
       this.props.populatePrompt(); 
-      console.log('correct!');
     } else {
-      console.log('wrong!');
       this.props.storeWrongAnswer(this.props.prompt);
       this.props.populatePrompt();
     }
