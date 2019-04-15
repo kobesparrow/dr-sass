@@ -1,3 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GameArea should match the snapshot 1`] = `undefined`;
+exports[`GameArea should match the snapshot with all data passed in 1`] = `
+<section
+  className="gameArea"
+>
+  <p>
+    What does the @onceler directive do
+  </p>
+  <div
+    className="answerButtons"
+  >
+    <button
+      onClick={[Function]}
+    >
+      repeats CSS definitions multiple times in a row
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      sets style based on a condition
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      @onceler is not a Sass directive
+    </button>
+  </div>
+</section>
+`;
