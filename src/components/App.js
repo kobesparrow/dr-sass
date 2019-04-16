@@ -113,7 +113,7 @@ class App extends Component {
         <div>
           <div className="gameArea">
             <p>You got everything correct!</p>
-            <button onClick={() => this.startNewGame()}>Start a new game</button>
+            <button onClick={() => this.startNewGame()} className="start-game-btn">Start a new game</button>
           </div>
           < Player
             submitName={this.submitName}
@@ -130,7 +130,7 @@ class App extends Component {
           <div className="gameArea">
             <p>You've reached the end of the game, what would you like to do?</p>
             <button onClick={this.resetWithMissedPrompts}>Try again with the questions you got wrong</button>
-            <button onClick={() => this.startNewGame()}>Start a new game</button>
+            <button onClick={() => this.startNewGame()} className="start-game-btn">Start a new game</button>
           </div>
           < Player
             submitName={this.submitName}

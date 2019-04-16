@@ -11,16 +11,19 @@ exports[`GameArea should match the snapshot with all data passed in 1`] = `
     className="answerButtons"
   >
     <button
+      className="answer-one-btn"
       onClick={[Function]}
     >
       repeats CSS definitions multiple times in a row
     </button>
     <button
+      className="answer-two-btn"
       onClick={[Function]}
     >
       sets style based on a condition
     </button>
     <button
+      className="answer-three-btn"
       onClick={[Function]}
     >
       @onceler is not a Sass directive

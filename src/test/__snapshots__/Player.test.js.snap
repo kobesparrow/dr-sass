@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player should match the snapshot 1`] = `
+<div>
+  <article
+    className="nameInput"
+  >
+    <p>
+      What is your name?
+    </p>
+    <input
+      id="name"
+      name="question"
+      onChange={[MockFunction]}
+      placeholder="Lorax"
+      type="text"
+    />
+    <input
+      className="name-submit-btn"
+      name="submit"
+      onClick={[Function]}
+      type="submit"
+    />
+    <img
+      className="intro-lorax"
+      src="lorax-book.jpg"
+    />
+  </article>
+</div>
+`;
+
+exports[`Player should meet the first condition 1`] = `
+<div>
+  <article
+    className="nameDisplay"
+  >
+    <p>
+      Welcome 
+    </p>
+    <p>
+      Score: 
+    </p>
+    <p />
+  </article>
+</div>
+`;

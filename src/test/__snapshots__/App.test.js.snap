@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <img
+      src="https://fontmeme.com/permalink/190413/a805259a19ac35e5d8c090ed8ff240ec.png"
+    />
+  </header>
+  <Player
+    answerStatus=""
+    name=""
+    nameSubmitted={false}
+    setName={[Function]}
+    submitName={[Function]}
+  />
+  <footer>
+    <img
+      src="https://fontmeme.com/permalink/190413/5c404c3ca1d3e56ff4be7a2803c5c6f4.png"
+    />
+  </footer>
+</div>
+`;
+
+exports[`App should match the snapshot if gameOver is true 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <img
+      src="https://fontmeme.com/permalink/190413/a805259a19ac35e5d8c090ed8ff240ec.png"
+    />
+  </header>
+  <Player
+    answerStatus=""
+    name=""
+    nameSubmitted={false}
+    setName={[Function]}
+    submitName={[Function]}
+  />
+  <footer>
+    <img
+      src="https://fontmeme.com/permalink/190413/5c404c3ca1d3e56ff4be7a2803c5c6f4.png"
+    />
+  </footer>
+</div>
+`;

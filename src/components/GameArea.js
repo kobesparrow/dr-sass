@@ -24,9 +24,9 @@ class GameArea extends Component {
       <section className="gameArea">
         <p>{this.props.prompt.Question}</p>
         <div className="answerButtons">
-          <button onClick={ this.checkAnswer }>{ this.props.prompt.answers[0] }</button>
-          <button onClick={ this.checkAnswer }>{ this.props.prompt.answers[1] }</button>
-          <button onClick={ this.checkAnswer }>{ this.props.prompt.answers[2] }</button>
+          <button className="answer-one-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[0] }</button>
+          <button className="answer-two-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[1] }</button>
+          <button className="answer-three-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[2] }</button>
         </div>
       </section>
     )
