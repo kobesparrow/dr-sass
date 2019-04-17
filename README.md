@@ -1,7 +1,7 @@
-###Memoize
+## Memoize
 Memoize is a solo project assigned during the final week of mod two at Turing School in Denver, CO. The project is intended to solidify the use of React and an opportunity to demonstrate test driven development and incorporate SCSS. The app is a Dr. Seuss-themed flashcard app aimed at teaching SCSS terms and funadmentals.
 
-###Install / Setup
+## Install / Setup
 - clone the repo
 - run npm install
 - run npm start
@@ -9,12 +9,12 @@ Memoize is a solo project assigned during the final week of mod two at Turing Sc
 
 Instructions: Enter your name then answer all questions to the best of your abilities. Correct answers earn points, all incorrect answers lose points. At the end of the game you can go through the game again with only the questions you got wrong, or start a new game entirely.
 
-###Stack
+## Stack
 - Jest/Enzyme
 - React
 - Scss
 
-###Screenshots
+## Screenshots
 Splash page
 [![Screen-Shot-2019-04-17-at-1-32-34-PM.png](https://i.postimg.cc/90RhK2my/Screen-Shot-2019-04-17-at-1-32-34-PM.png)](https://postimg.cc/D4TH4tbz)
 
