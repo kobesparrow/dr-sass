@@ -132,10 +132,4 @@ describe('App', () => {
     expect(getSpy).toHaveBeenCalled();
     expect(mockStartNewGame).toHaveBeenCalled();
   });
-
-
-  // it('should invoke submitName on click', () => {
-  //   wrapper.find('.start-game-btn').simulate('click');
-  //   expect(mockStartNewGame).toHaveBeenCalled();
-  // })
-})
+});

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Data from '../data-set.js';
 import Player from './Player.js'
 import GameArea from './GameArea.js'
 import '../scss/App.scss';
@@ -8,7 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      originalData: Data,
+      originalData: [],
       questions: [],
       currentPrompt: {},
       wrongAnswers: [],
@@ -18,6 +17,15 @@ class App extends Component {
       playerScore: 0,
       gameOver: false
     }
+  }
+
+  componentDidMount() {
+    fetch("https://fe-apps.herokuapp.com/api/v1/memoize/1901/sass-data-mark/drsass")
+      .then(response => response.json())
+      .then(gamesData => this.setState({ originalData: gamesData.drSass }))
+      .catch(err => {
+        throw new Error(err);
+      })
   }
 
   setName = (e) => {
