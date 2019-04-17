@@ -46,6 +46,7 @@ button {
   padding: 8px 0;
   border-radius: 25px;
   padding: 10px 25px;
+  cursor: pointer;
   &:hover {
     background-color: lighten($buttonBackground, 30%);
   }
