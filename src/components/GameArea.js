@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../scss/GameArea.scss';
 
 class GameArea extends Component {
   constructor(props) {
@@ -22,11 +21,11 @@ class GameArea extends Component {
   render() {
     return (
       <section className="gameArea">
-        <p>{this.props.prompt.Question}</p>
+        <h3>{this.props.prompt.Question}</h3>
         <div className="answerButtons">
-          <button className="answer-one-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[0] }</button>
-          <button className="answer-two-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[1] }</button>
-          <button className="answer-three-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[2] }</button>
+          <button className="answer-one-btn answer-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[0] }</button>
+          <button className="answer-two-btn answer-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[1] }</button>
+          <button className="answer-three-btn answer-btn" onClick={ this.checkAnswer }>{ this.props.prompt.answers[2] }</button>
         </div>
       </section>
     )
