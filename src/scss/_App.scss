@@ -1,3 +1,5 @@
+
+
 body {
   @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
   font-family: 'Roboto Slab', serif;
@@ -6,6 +8,22 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .App {
   text-align: center;
+}
+
+.final-card-btn {
+  border: 0px;
+  background-color: #FCB944;
+  color: #FEFEFE;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  padding: 8px 0;
+  border-radius: 25px;
+  padding: 10px 25px;
+  &:hover {
+    background-color: darken(#FCB944, 15%);
+  }
 }
