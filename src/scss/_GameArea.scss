@@ -1,0 +1,41 @@
+.gameArea {
+  width: 600px;
+  height: 270px;
+  border: 2px solid #082B33;
+  border-radius: 25px;
+  background: #FFF;
+  margin-left: 25%;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 26px;
+  margin-bottom: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.answerButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.answer-btn {
+  border: 0px;
+  background-color: desaturate( #ab3e8f, 10% );
+  color: #FEFEFE;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  padding: 8px 0;
+}

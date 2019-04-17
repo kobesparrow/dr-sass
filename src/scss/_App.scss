@@ -1,0 +1,11 @@
+body {
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+  font-family: 'Roboto Slab', serif;
+  background-image: url('images/dr-sass-background.svg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.App {
+  text-align: center;
+}

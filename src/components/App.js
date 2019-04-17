@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Player from './Player.js'
 import GameArea from './GameArea.js'
-import '../scss/App.scss';
+import correctAnswer from '../images/thatsnice-drsass.svg'
+import wrongAnswer from '../images/youidiot.svg'
 
 class App extends Component {
   constructor() {
@@ -68,7 +69,7 @@ class App extends Component {
     wrongAnswers.push(wrongPrompt)
     this.setState({
       wrongAnswers: wrongAnswers,
-      answerStatus: 'YOU IDIOT'
+      answerStatus: <img src={ wrongAnswer } />
     }, () => {
       localStorage.setItem('wrongAnswers', JSON.stringify(this.state.wrongAnswers))
     });
@@ -79,7 +80,7 @@ class App extends Component {
     playerScore++;
     this.setState({
       playerScore: playerScore,
-      answerStatus: "THAT'S NICE!"
+      answerStatus: <img src={ correctAnswer } />
     })
   }
 
@@ -183,11 +184,11 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <img src="https://fontmeme.com/permalink/190413/a805259a19ac35e5d8c090ed8ff240ec.png"></img>
+          <img src="https://fontmeme.com/permalink/190413/a805259a19ac35e5d8c090ed8ff240ec.png" />
         </header>
           { gameArea }
         <footer>  
-          <img src="https://fontmeme.com/permalink/190413/5c404c3ca1d3e56ff4be7a2803c5c6f4.png"></img>
+          <img src="https://fontmeme.com/permalink/190417/e684cff81faf34b25a6414f058a7b7ee.png" />
         </footer>
       </div>
     );

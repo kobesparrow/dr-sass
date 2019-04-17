@@ -4,26 +4,26 @@ exports[`GameArea should match the snapshot with all data passed in 1`] = `
 <section
   className="gameArea"
 >
-  <p>
+  <h3>
     What does the @onceler directive do
-  </p>
+  </h3>
   <div
     className="answerButtons"
   >
     <button
-      className="answer-one-btn"
+      className="answer-one-btn answer-btn"
       onClick={[Function]}
     >
       repeats CSS definitions multiple times in a row
     </button>
     <button
-      className="answer-two-btn"
+      className="answer-two-btn answer-btn"
       onClick={[Function]}
     >
       sets style based on a condition
     </button>
     <button
-      className="answer-three-btn"
+      className="answer-three-btn answer-btn"
       onClick={[Function]}
     >
       @onceler is not a Sass directive
