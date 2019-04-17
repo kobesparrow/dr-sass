@@ -6,7 +6,7 @@ exports[`Player should match the snapshot 1`] = `
     className="nameInput"
   >
     <p>
-      What is your name?
+      Today you are you! That is truer than true! There is no one alive who is you-er than you!
     </p>
     <div
       className="submit-name-block"
@@ -16,7 +16,7 @@ exports[`Player should match the snapshot 1`] = `
           id="name"
           name="question"
           onChange={[MockFunction]}
-          placeholder="Lorax"
+          placeholder="Your Name"
           type="text"
         />
         <input
