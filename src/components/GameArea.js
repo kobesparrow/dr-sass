@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../scss/GameArea.scss';
+// import '../scss/GameArea.scss';
 
 class GameArea extends Component {
   constructor(props) {

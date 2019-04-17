@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Player from './Player.js'
 import GameArea from './GameArea.js'
-import '../scss/App.scss';
+// import '../scss/App.scss';
 
 class App extends Component {
   constructor() {
@@ -187,7 +187,7 @@ class App extends Component {
         </header>
           { gameArea }
         <footer>  
-          <img src="https://fontmeme.com/permalink/190413/5c404c3ca1d3e56ff4be7a2803c5c6f4.png"></img>
+          <img src="https://fontmeme.com/permalink/190417/e684cff81faf34b25a6414f058a7b7ee.png"></img>
         </footer>
       </div>
     );

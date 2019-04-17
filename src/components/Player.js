@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../scss/Player.scss';
+// import '../scss/Player.scss';
 import lorax from '../images/lorax-book.jpg'
 
 class Player extends Component {
