@@ -24,5 +24,5 @@ Game area
 Final splash
 [![Screen-Shot-2019-04-17-at-1-38-15-PM.png](https://i.postimg.cc/h46gxXss/Screen-Shot-2019-04-17-at-1-38-15-PM.png)](https://postimg.cc/mhY0W201)
 
-###Learning Goals
+## Learning Goals
 To implement React from a green field project state to completion. Specifically within React — to understand when to make a component stateful and when not. Beyond that, the most important goal for me was to grasp testing and understand the syntax of Jest and Enzyme and how to test events and methods. Ancillary goal was to incorporate SCSS.
