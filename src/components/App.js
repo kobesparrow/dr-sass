@@ -32,7 +32,7 @@ class App extends Component {
     let name = e.target.value;
     this.setState({
       name: name,
-      questions: this.state.originalData
+      questions: [...this.state.originalData]
     }, () => {
         localStorage.setItem('originalData', JSON.stringify(this.state.originalData))
     });
