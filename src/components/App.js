@@ -137,9 +137,9 @@ class App extends Component {
       endGame =
         <div>
           <div className="gameArea">
-            <p>You've reached the end of the game, what would you like to do?</p>
-            <button onClick={this.resetWithMissedPrompts}>Try again with the questions you got wrong</button>
-            <button onClick={() => this.startNewGame()} className="start-game-btn">Start a new game</button>
+            <h5>You've reached the end of the game, what would you like to do?</h5>
+            <button onClick={this.resetWithMissedPrompts} className="final-card-btn">Try again with the questions you got wrong</button>
+            <button onClick={() => this.startNewGame()} className="start-game-btn final-card-btn">Start a new game</button>
           </div>
           < Player
             submitName={this.submitName}

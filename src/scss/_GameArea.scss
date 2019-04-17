@@ -1,21 +1,27 @@
+$buttonBackground: desaturate( #ab3e8f, 10% );
+$borderColor: #082B33;
+
 .gameArea {
   width: 600px;
-  height: 270px;
-  border: 2px solid #082B33;
+  height: 300px;
+  border: 2px solid $borderColor;
   border-radius: 25px;
   background: #FFF;
   margin-left: 25%;
   margin-bottom: 70px;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
 }
 
 h3 {
   font-size: 26px;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 
-ul {
-  list-style: none;
+h5 {
+  font-size: 18px;
 }
 
 .answerButtons {
@@ -32,10 +38,15 @@ button {
 
 .answer-btn {
   border: 0px;
-  background-color: desaturate( #ab3e8f, 10% );
+  background-color: $buttonBackground;
   color: #FEFEFE;
   font-size: 20px;
   margin-bottom: 0px;
   margin-top: 15px;
   padding: 8px 0;
+  border-radius: 25px;
+  padding: 10px 25px;
+  &:hover {
+    background-color: lighten($buttonBackground, 30%);
+  }
 }
